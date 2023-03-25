@@ -30,7 +30,7 @@ app.use(cors())
 app.use(express.static('public'))
 app.use('/', bodyParser.urlencoded({ extended: false }))
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html')
+  res.sendFile(__dirname + '/index.html')
 });
 
 // Add user to database with post request and use in response
